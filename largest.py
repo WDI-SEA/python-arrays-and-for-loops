@@ -5,7 +5,11 @@
 # largest([43, 90]) + largest([8, 2]) should compute 98
 # largest([-100, -80, -40]) should return -40
 def largest(a):
-  pass
+    if len(a) > 0:
+        x = sorted(a)
+        return x[-1]
+    else:
+        return 0
 
 print(largest([12, 40, 8]))
 print(largest([24, 53, 2, 92]))

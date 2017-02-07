@@ -4,7 +4,12 @@
 # are any two identical values at different indexes of
 # the array.
 def is_unique(a):
-  pass
+    for each in a:
+        if a.count(each) > 1:
+            return True
+            print(each, a.count(each))
+        else:
+            return False
 
 if is_unique([2,2,3]):
   print("yup.")
