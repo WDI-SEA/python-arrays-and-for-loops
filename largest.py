@@ -4,8 +4,18 @@
 # largest([12, 40, 8]) should return 40
 # largest([43, 90]) + largest([8, 2]) should compute 98
 # largest([-100, -80, -40]) should return -40
+
 def largest(a):
-  pass
+  if len(a) == 0:
+  	return 0
+
+  largest = a[0]
+
+  for num in a:
+  	if num > largest:
+  		largest = num
+
+  return largest
 
 print(largest([12, 40, 8]))
 print(largest([24, 53, 2, 92]))

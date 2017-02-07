@@ -21,8 +21,17 @@
 # for item in a:
 #   good_concat += str(item)
 # print(good_concat)
+
 def array_to_string(a):
-  pass
+  if len(a) == 0:
+  	return '[]'
+
+  result = []
+
+  for num in a:
+  	result.append(num)
+
+  return str(result)
 
 print(array_to_string([42, 12, 90]))
 print(array_to_string([]))
