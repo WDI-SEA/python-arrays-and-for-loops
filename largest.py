@@ -5,7 +5,14 @@
 # largest([43, 90]) + largest([8, 2]) should compute 98
 # largest([-100, -80, -40]) should return -40
 def largest(a):
-  pass
+    if (len(a) == 0):
+        return 0
+    largest_num = a[0]
+    for x in range(0,len(a)):
+        if (a[x] > largest_num):
+            largest_num = a[x]
+    return largest_num
+
 
 print(largest([12, 40, 8]))
 print(largest([24, 53, 2, 92]))
