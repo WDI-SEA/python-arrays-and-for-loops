@@ -120,7 +120,7 @@ done
 ```bash
 for PY in `ls *.py`
 do
-node $PY
+python3 $PY
 done
 ```
 
