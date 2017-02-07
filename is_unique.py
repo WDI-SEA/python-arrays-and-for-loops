@@ -4,7 +4,11 @@
 # are any two identical values at different indexes of
 # the array.
 def is_unique(a):
-  pass
+    for i in range(0, len(a)):
+        for j in range(i+1, len(a)):
+            if (a[i] == a[j]):
+                return False
+    return True
 
 if is_unique([2,2,3]):
   print("yup.")
